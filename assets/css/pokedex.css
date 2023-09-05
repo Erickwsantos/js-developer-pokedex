@@ -84,6 +84,7 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .pokemon .number {
@@ -124,7 +125,7 @@
 
 .pokemon .detail img {
     max-width: 100%;
-    height: 70px;
+    height: 150px;
 }
 
 .pagination {
@@ -144,6 +145,77 @@
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #9c927c;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 20px;
+
+    
+}
+
+/* .modal .modal-content{ */
+    /* display: flex; */
+/* } */
+
+.modal .modal-content .modal-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* width: 100%; */
+    padding: 1rem;
+
+}
+
+.modal .modal-content .modal-display .info-pokemon {
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #888; */
+    /* border-radius: 8px;
+    margin-bottom: 55px; */
+    /* padding: 1rem;margin */
+}
+
+.modal .modal-content .position-pokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 75%;
+    height: 220px;
+    position: relative;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
     cursor: pointer;
 }
 
